@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* small screen */
+@media (min-width:768px){
+  .container {
+      width: 750px;
+  }
+}
+/* medium screen */
+@media (min-width:992px){
+  .container{
+      width: 970px;
+  }
+}
+/* large screen */
+@media (min-width:1200px){
+  .container{
+      width: 1170px;
+  }
+}
+
+.nav-item .nav-link,
+.menu-list li a{
+  text-decoration: none !important;
+  color: white !important;
+}
+.nav-item .nav-link:hover,
+.menu-list li:hover a{
+  color: #0d6efd !important;
+}
+.btn-contact:hover{
+  color: #0d6efd !important;
+  background-color: white;
+  transition: 0.2s;
+}
+.fab{
+  color: #0d6efd;
+  font-size: 25px;
+}
+.fab:hover{
+  color: white;
+}
+.btnbefo::before{
+position: absolute;
+content: "";
+border-width: 10px;
+border-style:solid;
+border-color: transparent transparent lightblue transparent;
+top: 20px;
+left: 13px;
+display: none;
+}
+.btnbefo::after{
+position: absolute;
+content: " ";
+height: 40px;
+width: 80px;
+background-color: lightblue;
+top: 40px;
+left: -15px;
+border-radius: 5px;
+display: none;
+}
+.btnbefo:active::before,
+.btn:hover::before{
+  display: block;
+
+}
+.btnbefo:hover::after{
+  content: "copy to clipboard";
+  display: block;
+}
+.btnbefo:active::after{
+  content: "copied";
+  display: block;
+  height: 25px;
+}
+.navbar-brand{
+  transition: 0.4s;
+}
+.navbar-brand:hover{
+  text-shadow: 10px 10px 20px white,
+              -10px -10px 20px white;
+}

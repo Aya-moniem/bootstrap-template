@@ -43,6 +43,10 @@
 .fab:hover{
   color: white;
 }
+.btnbefo{
+  position: relative;
+  left: 30px;
+}
 .btnbefo::before{
 position: absolute;
 content: "";
